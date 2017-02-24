@@ -1,0 +1,24 @@
+[project]
+version=1
+platform=EM500W
+src_lib_ver=2_00
+name=simple project v1.0
+output=output.bin
+debug=on
+defines=/dOBJECT_FD=FD_ENABLED /dLCD_TYPE=SAMSUNG_S6B0108 /dOBJECT_LCD=LCD_ENABLED /dOBJECT_KP=KP_ENABLED
+transport=udp_winpcap
+[address1]
+platform=EM500W
+transport=udp_broadcast
+address=0.100.0.0.134.89
+[address2]
+platform=EM500W
+transport=udp_winpcap
+address=
+[file1]
+path=main.tbs
+type=basic
+format=
+condition=
+locked=no
+location=
