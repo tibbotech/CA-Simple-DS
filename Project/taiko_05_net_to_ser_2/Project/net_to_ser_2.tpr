@@ -1,0 +1,26 @@
+[project]
+platform = TPP3W(G2)
+src_lib_ver = 2_01_03
+name = simple project v1.0
+output = output.bin
+debug = on
+watch = sock.txbuffsize, sock.rxbuffsize, ser.txbuffsize, ser.rxbuffsize
+defines = /dOBJECT_FD=FD_ENABLED /dOBJECT_LCD=LCD_ENABLED /dLCD_TYPE=SAMSUNG_S6B0108 /dOBJECT_KP=KP_ENABLED
+transport = udp_broadcast
+
+[address1]
+transport = udp_broadcast
+address = 0.100.0.0.134.89
+
+[file1]
+line = 0
+cursor = 0
+path = main.tbs
+type = basic
+format = 
+condition = 
+opened = active
+locked = no
+location = 
+breakpoints = 
+
